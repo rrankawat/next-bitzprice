@@ -1,10 +1,11 @@
 import Fetch from "isomorphic-unfetch";
 import Layout from "../components/Layout";
+import Prices from "../components/Prices";
 
 const Index = (props) => (
   <Layout>
     <h1>Welcome To BitzPrice</h1>
-    {props.bpi.time.updated}
+    <Prices bpi={props.bpi} />
   </Layout>
 );
 
